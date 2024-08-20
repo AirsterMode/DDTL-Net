@@ -8,11 +8,8 @@ import torch.optim as optim
 import get_cls_map
 import time
 
-from SSFTTnet import SSFTTnet
+
 from AirsterNet import AirsterNet
-from xiaorong_fft import FFT
-from xiaorong_refine import Refine
-from manba import Manba
 
 from utilsss.general_util import setup_seed
 from utilsss.mertics import acc_reports
@@ -398,9 +395,9 @@ def commandWork(dataset_name, model_name, patch_size):
                    epoch_num, Iter)
     
 if __name__ == '__main__':
-
-    # patch
-#   5 7 9 11 13 15 17 19 21
+    # General Config
+    
+    # patch  5 7 9 11 13 15 17 19 21
     patch_sizes = [15]
     
     # dataset_names = ["WHU_HongHu",'PU','SA','PC','H2013','KSC']

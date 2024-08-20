@@ -1,0 +1,2 @@
+check the ./data_loader/load_method.py
+you can change the dataset path.
